@@ -163,21 +163,6 @@ public class LocatorFragment extends SupportMapFragment {
                 // передаем управление InfoWindow к ClusterManager
                 googleMap.setInfoWindowAdapter(clusterManager.getMarkerManager());
 
-//                 При добавлении слоя с границами стран тормозит.
-//                try {
-//                    GeoJsonLayer layer = new GeoJsonLayer(googleMap, R.raw.country_borders_low_res, getActivity());
-//
-//                    GeoJsonPolygonStyle style = layer.getDefaultPolygonStyle();
-//                    //style.setFillColor(Color.MAGENTA);
-//                    style.setStrokeColor(Color.MAGENTA);
-//                    style.setStrokeWidth(1F);
-//
-//                    layer.addLayerToMap();
-//                } catch (IOException | JSONException e) {
-//                    e.printStackTrace();
-//                }
-
-
                 updateUI();
             }
         });
